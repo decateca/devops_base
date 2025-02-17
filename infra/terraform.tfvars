@@ -13,4 +13,4 @@ ec2_ami_id     = "ami-04b4f1a9cf54c11d0"
 
 ec2_user_data_install_apache = ""
 
-domain_name = "apidev.apidecateca.com" ##you must use the main domain apidecateca.com
+domain_name = "apidecateca.com" ##you must use the main domain apidecateca.com
