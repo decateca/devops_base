@@ -10,7 +10,7 @@ resource "aws_acm_certificate" "dev_proj_1_acm_arn" {
   validation_method = "DNS"
 
   tags = {
-    Environment = "production"
+    Environment = "development" ##production
   }
 
   lifecycle {

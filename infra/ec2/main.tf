@@ -36,6 +36,6 @@ resource "aws_instance" "dev_proj_1_ec2" {
 }
 
 resource "aws_key_pair" "dev_proj_1_public_key" {
-  key_name   = "aws_key"
+  key_name   = "aws_ec2_app_terraform"
   public_key = var.public_key
 }

@@ -59,7 +59,7 @@ module "alb" {
   lb_listner_default_action = "forward"
   lb_https_listner_port     = 443
   lb_https_listner_protocol = "HTTPS"
-  dev_proj_1_acm_arn        = module.aws_ceritification_manager.dev_proj_1_acm_arn
+  dev_proj_1_acm_arn        = module.aws_certification_manager.dev_proj_1_acm_arn
   lb_target_group_attachment_port = 5000
 }
 
@@ -70,7 +70,7 @@ module "hosted_zone" {
   aws_lb_zone_id  = module.alb.aws_lb_zone_id
 }
 
-module "aws_ceritification_manager" {
+module "aws_certification_manager" {
   source         = "./certificate-manager"
   domain_name    = var.domain_name
   hosted_zone_id = module.hosted_zone.hosted_zone_id
